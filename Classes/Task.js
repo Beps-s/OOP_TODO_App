@@ -1,4 +1,5 @@
 class Task {
+	
 	constructor(name){
 		this.name = name;
 	}
@@ -8,4 +9,4 @@ class Task {
 	addedToLS(){
 		console.log(this.name + ' is added to LS')
 	}
-}
+} 
