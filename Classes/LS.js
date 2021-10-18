@@ -25,7 +25,7 @@ class LS {
 		localStorage.setItem('tasks', JSON.stringify(tasks));
 		task.addedToLS();
 	}
-	
+
 	deleteTask(task){
 		let tasks = this.getData('tasks');
 		tasks.forEach(function(tasksElement, tasksIndex){
@@ -35,4 +35,8 @@ class LS {
 		});
 		this.setData('tasks', tasks)
 	}
-} 
+
+	deleteTasks(){
+		localStorage.clear();
+	}
+}

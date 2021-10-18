@@ -24,4 +24,12 @@ class UI {
 			}
 		}
 	}
+
+	deleteTasks(tasks){
+		if(confirm('Do you want to delete all tasks?')) {
+			while(tasks.firstChild){
+				tasks.removeChild(tasks.firstChild);
+			}
+		}
+	}
 }
